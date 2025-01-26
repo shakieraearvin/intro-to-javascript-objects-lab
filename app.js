@@ -31,9 +31,28 @@ Exercise 3
 Solve Exercise 3 here:
 */
 
+// Add a new property to the game object
 game.difficulty = "Hard"
 
 console.log(game)
+
+
+
+/*
+Exercise 4
+1. Select a starter Pokémon from the `pokemon` array. Remember, a starter Pokémon's `starter` property is true.
+2. Add this Pokémon to the `game.party` array. Which array method will you use to add them?
+
+
+Solve Exercise 4 here:
+*/
+
+// Select a starter Pokémon from the pokemon array
+
+const starterPokemon = pokemon.find(pokemon => pokemon.starter === true)
+game.party.push(starterPokemon)
+
+console.log(game.party)
 
 
 
