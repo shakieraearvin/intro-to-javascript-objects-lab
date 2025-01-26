@@ -55,6 +55,26 @@ game.party.push(starterPokemon)
 console.log(game.party)
 
 
+/*
+Exercise 5
+1. Choose three more Pokémon from the `pokemon` array and add them to your party.
+2. Consider different attributes like 'type' or 'HP' for your selection. Which array method will you use to add them?
+
+
+Solve Exercise 5 here:
+*/
+
+// Choose three more Pokémon from the pokemon array and add them to party
+
+const waterPokemon = pokemon.find(pokemon => pokemon.type === 'water')
+const firePokemon = pokemon.find(pokemon => pokemon.type === 'fire')
+const grassPokemon = pokemon.find(pokemon => pokemon.type === 'grass')
+
+game.party.push(waterPokemon)
+game.party.push(firePokemon)
+game.party.push(grassPokemon)
+
+console.log(game.party)
 
 
 
