@@ -281,3 +281,20 @@ game.partyCount = function () {
 
 const count = game.partyCount ();
 console.log('Numnber of Pokemon in Party', count);
+
+/*
+Exercise 15
+1. Now, complete gyms with a difficulty below 8. Reflect on how this is similar to or different from the previous gym exercises.
+(change the value of `complete` in the qualifying objects from false to true).
+
+Solve Exercise 15 here:
+*/
+
+Object.values(game.gyms).forEach(gym => {
+  if (gym.difficulty < 8) {
+    gym.completed = true
+  }
+})    
+
+console.log(game.gyms)
+
